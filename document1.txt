@@ -1,15 +1,7 @@
 def partition(l, r, nums):
     # Last element will be the pivot and the first element the pointer
     pivot, ptr = nums[r], l
-    for i in range(l, r):
-        if nums[i] <= pivot:
-            # Swapping values smaller than the pivot to the front
-            nums[i], nums[ptr] = nums[ptr], nums[i]
-            ptr += 1
-    # Finally swapping the last element with the pointer indexed number
-    nums[ptr], nums[r] = nums[r], nums[ptr]
-    return ptr
- s
+    for i in ran
     if l < r:
         pi = partition(l, r, nums)
         quicksort(l, pi-1, nums)  # Recursively sorting the left values
@@ -23,6 +15,7 @@ result = [1, 2, 3, 4, 5]
 print(quicksort(0, len(example)-1, example))
  
 example = [2, 5, 6, 1, 4, 6, 2, 4, 7, 8]
-result = [1, 2, 2, 4, 4, 5, 6, 6, 7, 8]
-# As you can see, it works for duplicates too
+result = [1, 2, 2, 4 works for duplicates too
 print(quicksort(0, len(example)-1, example))
+
+Hello
